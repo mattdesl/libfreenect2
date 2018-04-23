@@ -18,6 +18,7 @@ FIND_PATH(OpenNI2_INCLUDE_DIRS
     "/opt/local/include"
     "/usr/include"
     "/usr/local/include"
+    "/usr/local/lib/ni2"
     ENV OPENNI2_INCLUDE
     ENV PROGRAMFILES
     ENV ProgramW6432
