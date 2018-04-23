@@ -18,7 +18,9 @@ Driver for Kinect for Windows v2 (K4W2) devices (release and developer preview).
 
 Note: libfreenect2 does not do anything for either Kinect for Windows v1 or Kinect for Xbox 360 sensors. Use libfreenect1 for those sensors.
 
-If you are using libfreenect2 in an academic context, please cite our work using the following DOI: [![DOI](https://zenodo.org/badge/20096/OpenKinect/libfreenect2.svg)](https://zenodo.org/badge/latestdoi/20096/OpenKinect/libfreenect2)
+If you are using libfreenect2 in an academic context, please cite our work using the following DOI: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.50641.svg)](https://doi.org/10.5281/zenodo.50641)
+
+
 
 If you use the KDE depth unwrapping algorithm implemented in the library, please also cite this ECCV 2016 [paper](http://users.isy.liu.se/cvl/perfo/abstracts/jaremo16.html).
 
@@ -209,8 +211,8 @@ Note: Ubuntu 12.04 is too old to support. Debian jessie may also be too old, and
     1. (Ubuntu 14.04 only) `sudo dpkg -i debs/libusb*deb`
     2. (Other) `sudo apt-get install libusb-1.0-0-dev`
 * Install TurboJPEG
-    1. (Ubuntu 14.04 and newer) `sudo apt-get install libturbojpeg libjpeg-turbo8-dev`
-    2. (Debian) `sudo apt-get install libturbojpeg0-dev`
+    1. (Ubuntu 14.04 to 16.04) `sudo apt-get install libturbojpeg libjpeg-turbo8-dev`
+    2. (Debian/Ubuntu 17.10 and newer) `sudo apt-get install libturbojpeg0-dev`
 * Install OpenGL
     1. (Ubuntu 14.04 only) `sudo dpkg -i debs/libglfw3*deb; sudo apt-get install -f`
     2. (Odroid XU4) OpenGL 3.1 is not supported on this platform. Use `cmake -DENABLE_OPENGL=OFF` later.
